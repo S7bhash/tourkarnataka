@@ -1,0 +1,17 @@
+import requests
+
+print("\nSignUp page...!")
+r=requests.get("http://127.0.0.1:5000/signup")
+print("Response Status Code -- ",r.status_code)
+print("\nLogin page...!")
+r=requests.get("http://127.0.0.1:5000/login")
+print("Response Status Code -- ",r.status_code)
+print("\nHome page...!")
+r=requests.get("http://127.0.0.1:5000/")
+print("Response Status Code -- ",r.status_code)
+print("\nPlace info page...!")
+r=requests.get("http://127.0.0.1:5000/bangalore")
+print("Response Status Code -- ",r.status_code)
+print("\nAdmin page...!")
+r=requests.get("http://127.0.0.1:5000/admin")
+print("Response Status Code -- ",r.status_code)
