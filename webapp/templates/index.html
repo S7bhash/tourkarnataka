@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='index.css')}}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <title>Home | TourKarnataka</title>
+  </head>
+  <body>
+    {% with messages =  get_flashed_messages() %}
+      {% if messages %}
+        {% for message in messages %}
+        <div class="alert alert-warning alert-dismissible fade show" role="alert" style="background-color:green;color:white;">
+          <strong>{{message}}</strong>
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+    <div>
+    	<header>
+    		<div id="fxpr"><b>TourKarnataka</b></div>
+    		<div id="below">Don't marry, travel together...!</div>
+    		</header>
+    </div>
+    	<nav class="navbar navbar-dark bg-primary" style="color:white;">
+    		<ul class="nav">
+    			 <form class="form-inline" method="post">
+             {{form.hidden_tag()}}
+             {{form.search}}
+             {{form.search_submit()}}
+      			</form>
+    		<li class="nav-link">
+    			<a class="item" href={{url_for('users.index')}}>{{current_user.username}}</a>
+    		</li>
+    		<li class="nav-link">
+    			<a href="{{url_for('users.logout')}}" class="item">Logout</a>
+    		</li>
+    		</ul>
+    	</nav>
+
+      <div class="heading"><span class="badge badge-secondary">5</span> <b>Editor's choice places to be visited in Karnataka</b></div>
+      <div class="points">
+        <div class="point-head"><a href="/coorg">1. Coorg</a></div>
+        <p class="lead"> Located amidst imposing mountains in Karnataka with a perpetually misty landscape, Coorg is the place to be for all nature lovers.
+          This popular coffee producing hill station is not only popular for its beautiful green hills and the streams cutting right through them.
+          It also stands as a popular destination because of its culture and people. The Kodavas, a local clan specialising in martial arts, are especially notable for their keen hospitality.
+        </p>
+        <p class="lead">
+          Coorg, officially known as Kodagu, is the most affluent hill station in Karnataka.
+         It is well known for its breathtakingly exotic scenery and lush greenery. Forest covered hills, spice and coffee plantations only add to the landscape.
+        </p>
+      </div>
+      <img src="{{url_for('static',filename='trv1.jpg')}}" class="img">
+      <div class="points">
+        <div class="point-head"><a href="/bangalore">2. Bangalore</a></div>
+        <p class="lead"> Having evolved gradually from being the Garden City to the Silicon Valley of India,
+          Bengaluru is the third largest and one of the most livable cities in India. Bangalore is loved for its pleasant weather, beautiful parks and lakes all around the town.
+
+          When in Bangalore, one can choose to take a long, stroll through the greenery of Cubbon Park,
+          shop in many modern malls or street side markets or hop into one of the several acclaimed craft breweries in the city for a cold and refreshing drink.
+          Bangalore had come to be renowned for its eateries, street food corners, quirky cafes, coffee roasters and pubs dotting every corner of the city,
+          serving cuisines from all over the world. Brunches, buffets, burgers, rooftop cafes, late-night eats - Bangalore has it all.
+        </p>
+      </div>
+      <img src="{{url_for('static',filename='trv2.jpg')}}" class="img">
+      <div class="points">
+        <div class="point-head"><a href="/mysore">3. Mysore</a></div>
+        <p class="lead">Famously known as The City of Palaces, it wouldn’t be wrong to say that Mysore is one of the most flamboyant places in the country.
+           It is replete with the history of its dazzling royal heritage, intricate architecture, its famed silk sarees, yoga, and sandalwood, to name just a few.
+            Located in the foothills of the Chamundi Hills, Mysore is the third most populated city in the state of Karnataka,
+          and its rich cultural heritage draws millions of tourists all year round.
+        </p>
+      </div>
+      <img src="{{url_for('static',filename='trv3.jpg')}}" class="img">
+      <div class="points">
+        <div class="point-head"><a href="/hampi">4. Hampi</a></div>
+        <p class="lead">Hampi, the city of ruins, is a UNESCO World Heritage Site.
+          Situated in the shadowed depth of hills and valleys in the state of Karnataka,
+           this place is a historical delight for travellers. Surrounded by 500 ancient monuments, beautiful temples, bustling street markets, bastions,
+           treasury building and captivating remains of Vijayanagar Empire,
+           Hampi is a backpacker's delight. Hampi is an open museum with 100+ locations to explore and a favourite way to see the city from the perspective of its history.
+        </p>
+      </div>
+      <img src="{{url_for('static',filename='trv4.jpg')}}" class="img">
+      <div class="points">
+        <div class="point-head"><a href="/chikmagalur">5. Chikmagalur</a></div>
+        <p class="lead">Famously known as the ‘Coffee Land of Karnataka’, Chikmagalur is situated in the foothills of the Mullayangiri Range in Karnataka and stands at an altitude of 3400 feet.
+           If you love the aroma of freshly brewed coffee in the mornings, you are going to love Chikmagalur, which has a perpetual fragrance of coffee lingering in the air.
+           Famous for its tall mountains, lush green forests and its tranquil environment (apart from its coffee production),
+           Chikmagalur is a very popular tourist destination and is a quaint getaway from the busy life of the city.
+        </p>
+      </div>
+      <img src="{{url_for('static',filename='trv5.jpg')}}" class="img">
+<footer>
+  DBMS project. TourKarnataka, a touring guide.
+  <br>
+  By- B Subhash , B Mohith Rao and Arun S Rathod
+</footer>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+body{
+	background-color:white;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	text-align: center;
+}
+button{
+	width: 15vw;
+	height: 8vh;
+	font-size:26px;
+	margin-top: 3vh;
+}
+@font-face {
+  font-family: oneday;
+  src: url(ONEDAY.ttf)
+}
+header{
+	font-family: oneday;
+	font-size: 62px;
+	color: white;
+	background-color: black;
+	height: 14vh;
+	text-align: center;
+	padding-top:3vh;
+}
+
+.div{
+	width: 70vw;
+	margin-left: 15vw;
+	margin-right: 15vw;
+	padding:5vw 5vw;
+	color:black;
+	text-align: center;
+	background-size: 100% 100%;
+	font-size: 46px;
+	background-repeat: no-repeat;
+	margin-top:2vh;
+	margin-bottom: 15vh;
+	font-family: bookman;
+}
+.head{
+	text-decoration: underline;
+	color: black;
+	font-size:64px;
+	margin-left: 40vw;
+}

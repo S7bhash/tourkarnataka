@@ -1,1 +1,0 @@
-# TOUR KARNATKA 

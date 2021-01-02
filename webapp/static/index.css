@@ -1,0 +1,135 @@
+body{
+	margin: 0px;
+	background-color: white;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#search{
+	background-color: green;
+	color: white;
+  width:13vw;
+  font-size: 21px;
+}
+#search:hover{
+	background-color: blue;
+}
+#search-space{
+	margin-left: 1.2vw;
+	width: 27vw;
+  font-size: 19px;
+}
+
+.item{
+	color: white;
+}
+.nav-link{
+
+	font-size: 25px;
+	font-family: oneday;
+}
+.index-blogs{
+	width: 100%;
+	height: 80px;
+	text-align: center;
+	font-size: 43px;
+	background-color: #800000;
+	color: white;
+	padding-top: 13px;
+	font-family: oneday;
+}
+.points{
+  background-color:white;
+  text-align: center;
+  margin-bottom: 3vh;
+  margin-top: 3vh;
+}
+.point-head{
+  font-size: 42px;
+  text-decoration: underline;
+}
+.heading{
+  color:white;
+  font-weight:bold;
+  font-size:68px;
+  background-image: url(ih1.jpeg);
+  height:58vh;
+  width:100%;
+  text-align: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding-top: 20vh;
+
+}
+.img{
+  width: 780px;
+  height:540px;
+  margin-left: 28vw;
+}
+.lead{
+  width:70vw;
+  margin-left: 15vw;
+  font-family:Barlow Condensed Light;
+}
+@font-face {
+  font-family: oneday;
+  src: url(ONEDAY.ttf)
+}
+header{
+	background-image: url(head.jpg);
+	height:140px;
+	width: 100%;
+	text-align: center;
+	padding-top: 10px;
+  background-size: cover;
+	background-repeat: no-repeat;
+}
+.title{
+	height: 50px;
+	background-color: yellow;
+	padding-left: 30px;
+	font-size: 28px;
+	font-family:
+	color:black;
+	font-weight: bold;
+}
+.jumb{
+	width: 80vw;
+	background-image: url(how.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-left:10vw;
+	margin-top: 10px;
+	text-align: center;
+	border-style: solid;
+	border-width: 2px;
+	border-color: red;
+}
+#item{
+	color: white;
+}
+#blog_pic{
+	border-style: solid;
+	border-width: 2px;
+	border-color: red;
+}
+#fxpr{
+	font-size:60px;
+	color:white;
+	font-family: oneday;
+}
+#below{
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	font-family: oneday;
+}
+footer{
+	width: 100%;
+	height: 11vh;
+	background-color: black;
+  margin-top: 20px;
+	color: white;
+	font-size: 21px;
+	text-align: center;
+	padding-top: 2vh;
+}

@@ -1,0 +1,92 @@
+body{
+	margin: 0px;
+  background-image: url(sbg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+  font-weight: bold;
+}
+@font-face {
+  font-family: oneday;
+  src: url(ONEDAY.ttf)
+}
+.errors{
+	font-size: 18px;
+	font-family: arial;
+	color:red;
+}
+header{
+	background-color: black;
+	height:160px;
+	width: 100%;
+	text-align: center;
+	padding-top: 13px;
+  background-size: cover;
+	background-repeat: no-repeat;
+}
+.index-blogs{
+	width: 100%;
+	height: 80px;
+	text-align: center;
+	font-size: 43px;
+	background-color: #800000;
+	color: white;
+	padding-top: 13px;
+	font-family: oneday;
+}
+#fxpr{
+	font-size:60px;
+	color:white;
+	font-family: oneday;
+}
+#below{
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	font-family: oneday;
+}
+
+form{
+  margin-left:5vw;
+  margin-right: 5vw;
+  margin-top: 10vh;
+  font-size: 20px;
+  font-weight: bold;
+}
+#signup-btn{
+  width:14vw;
+}
+.ff{
+	margin-top: 14px;
+}
+#ip{
+	width:280px;
+	height: 58px;
+	margin-left:3.41vw;
+	margin-top:2px;
+	max-width: 290px;
+}
+
+#su{
+
+	width:280px;
+	max-width: 290px;
+	margin-top:6px;
+	height: 63px;
+	margin-left:3.41vw;
+	font-family: oneday;
+	font-size: 40px;
+	background-color:#800000;
+}
+.inputs{
+	margin-top: 30px;
+}
+footer{
+	width: 100%;
+	height: 11vh;
+	background-color: black;
+	color: white;
+	font-size: 21px;
+	text-align: center;
+	padding-top: 2vh;
+	margin-bottom: 0px;
+}

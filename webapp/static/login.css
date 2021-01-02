@@ -1,0 +1,43 @@
+body{
+	margin: 0px;
+  background-image: url(lbg.jpeg);
+	background-size: cover;
+	background-repeat: no-repeat;
+
+}
+@font-face {
+  font-family: oneday;
+  src: url(ONEDAY.ttf)
+}
+header{
+	background-color: black;
+	height:160px;
+	width: 100%;
+	text-align: center;
+	padding-top: 13px;
+  background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#fxpr{
+	font-size:60px;
+	color:white;
+	font-family: oneday;
+}
+#below{
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	font-family: oneday;
+}
+
+form{
+  margin-left:34vw;
+  margin-top: 18vh;
+  font-size: 20px;
+  font-weight: bold;
+}
+#signup-btn{
+  width:15vw;
+  height: 4vh;
+}
